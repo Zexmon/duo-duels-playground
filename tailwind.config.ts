@@ -52,6 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Game-specific colors
+				player1: 'hsl(var(--player1))',
+				player2: 'hsl(var(--player2))',
+				'win-color': 'hsl(var(--win-color))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +88,45 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'drop-piece': {
+					'0%': {
+						transform: 'translateY(-100px)',
+						opacity: '0'
+					},
+					'50%': {
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px hsl(var(--accent) / 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 30px hsl(var(--accent) / 0.6)'
+					}
+				},
+				'win-celebration': {
+					'0%, 100%': {
+						transform: 'scale(1)',
+						boxShadow: '0 0 20px hsl(var(--win-color) / 0.4)'
+					},
+					'50%': {
+						transform: 'scale(1.1)',
+						boxShadow: '0 0 40px hsl(var(--win-color) / 0.8)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'drop-piece': 'drop-piece 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'win-celebration': 'win-celebration 1s ease-in-out infinite'
 			}
 		}
 	},
