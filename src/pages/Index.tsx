@@ -1,11 +1,7 @@
-import { GameBoard } from "@/components/GameBoard";
+import { EcommercePage } from "@/components/EcommercePage";
 
 const Index = () => {
-  return (
-    <div className="min-h-screen" style={{ background: 'var(--gradient-bg)' }}>
-      <GameBoard />
-    </div>
-  );
+  return <EcommercePage />;
 };
 
 export default Index;

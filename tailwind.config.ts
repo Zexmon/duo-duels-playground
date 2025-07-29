@@ -52,10 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Game-specific colors
-				player1: 'hsl(var(--player1))',
-				player2: 'hsl(var(--player2))',
-				'win-color': 'hsl(var(--win-color))',
+				// E-commerce specific colors
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
+				price: 'hsl(var(--price))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
